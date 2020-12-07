@@ -1,0 +1,152 @@
+/* colours
+
+Primary
+A100: #8C9EFF
+A200: #536DFE
+A400: #3D5AFE
+A700: #304FFE
+
+Secondary
+50: #E8EAF6
+100: #C5CAE9
+200: #9FA8DA
+300: #7986CB
+400: #5C6BC0
+500: #3F51B5
+600: #3949AB
+700: #303F9F
+800: #283593
+900: #1A237E
+
+Neutral
+0: #ffffff
+A0: #717171
+A1: #222222
+
+*/
+
+ @keyframes fadeInDown {
+   0% {
+     opacity: 0;
+     transform: translateY(10%);
+   }
+
+   100% {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+
+
+html {
+  background: #304FFE;
+  color: #ffffff;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 6px;
+  height: 100%;
+  margin: 0;
+  padding: 0 5vw;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 900px;
+  min-height: 100vh;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+  color: #ffffff;
+  padding-bottom: 0.05rem;
+  border-bottom: 1px solid #ffffff;
+
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+a:hover, a:focus {
+  color: #8C9EFF;
+  border-bottom: 1px solid #8C9EFF;
+}
+
+.name {
+  animation: fadeInDown .6s ease-in-out .3s forwards;
+  font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 3px;
+  margin-top: 17rem;
+}
+
+.intro {
+  animation: fadeInDown .6s ease-in-out .3s forwards;
+  flex: 1;
+  font-family: 'Noto Serif', sans-serif;
+  font-size: 7rem;
+  line-height: 10rem;
+  margin-left: -.5rem;
+  margin-top: 10rem;
+  margin-bottom: 18rem;
+}
+
+.about {
+  animation: fadeInDown .6s ease-in-out .3s forwards;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 5rem;
+  margin-bottom: 4rem;
+}
+
+.socials {
+  animation: fadeInDown .6s ease-in-out .3s forwards;
+  padding-bottom: 17rem;
+}
+
+.socials li {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+@media screen and (max-width: 50em) {
+  body {
+    padding: 0 3rem;
+  }
+
+  .name {
+    font-size: 2rem;
+    margin-top:5rem;
+  }
+
+  .intro {
+    font-size: 5rem;
+    line-height: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .about {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .socials {
+    padding-bottom: 4rem;
+  }
+
+  .socials li {
+    margin-bottom: 0;
+  }
+
+}
