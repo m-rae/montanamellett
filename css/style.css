@@ -1,0 +1,272 @@
+/* colours
+A100: #9B5C37
+A200: #F6F2E6
+A400: #333333
+A700: ##015871
+*/
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Wave animation */
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0, -25px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+/* Ted Mcdonald https://codepen.io/tedmcdo/pen/PqxKXg for the wave animation */
+html {
+  background: #F6F2E6;
+  color: #333333;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Ruda', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 6px;
+  height: 100%;
+  margin: 0;
+  padding: 0 5vw;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 900px;
+  min-height: 100vh;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+  color: #964C27;
+  padding-bottom: 0.05rem;
+  border-bottom: 1px solid #964C27;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+a:hover, a:focus {
+  color: ##015871;
+  border-bottom: 1px solid ##015871;
+}
+
+.name {
+  animation: fadeInDown .6s ease-in-out .3s forwards;
+  font-family: 'Ruda', Helvetica, Arial, sans-serif;
+  font-size: 5.5rem;
+  font-weight: bold;
+  color: #9B5C37;
+  letter-spacing: 3px;
+  margin-top: 15rem;
+}
+
+.intro {
+  animation: fadeInDown .6s ease-in-out .3s forwards;
+  font-family: 'Ruda', Helvetica, Arial, sans-serif;
+  font-size: 7rem;
+  line-height: 10rem;
+  margin-left: -.5rem;
+  margin-top: 10rem;
+  margin-bottom: 7rem;
+}
+
+.about {
+  animation: fadeInDown .6s ease-in-out .3s forwards;
+  font-family: 'Roboto Slab', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 5rem;
+  margin-bottom: 4rem;
+}
+
+.socials {
+  animation: fadeInDown .6s ease-in-out .3s forwards;
+  padding-bottom: 17rem;
+  padding-left: 0.5rem;
+}
+
+.socials li {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+@media screen and (max-width: 50em) {
+  body {
+    padding: 0 3rem;
+  }
+
+  a {
+    color: #015871;
+    border-bottom: 1px solid #015871;
+  }
+
+  a:hover, a:focus {
+    color: #964C27;
+    border-bottom: 1px solid #964C27;
+  }
+
+  .name {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+
+  .intro {
+    font-size: 5rem;
+    line-height: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .about {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .socials {
+    padding-bottom: 4rem;
+  }
+
+  .socials li {
+    margin-bottom: 0;
+  }
+
+  .ocean {
+    display: none;
+  }
+
+  .wave {
+    display: none;
+  }
+
+  .wave:nth-of-type(2) {
+    display: none;
+  }
+
+  :root {
+    --yellow: #964C27;
+  }
+
+  .container {
+    filter: url('#gooey');
+    display: flex;
+  }
+
+  div.blobs {
+    background: var(--yellow);
+    width: 50px;
+    height: 50px;
+    position: relative;
+    /* offset-path: path('M-2.49942505,8.7874147 C4.52775317,12.2064524 11.3921407,12.2064524 18.0937376,8.7874147 C28.146133,3.65885811 28.146133,-13.3979429 8.82754694,-17.9879156 C-10.4910391,-22.5778882 -23.1457428,-19.0670628 -31.5386951,4.36625841 C-39.9316474,27.7995796 -4.28843555,68.6949409 34.7084759,54.8415689 C73.7053873,40.9881969 90.3354587,9.86754694 81.8459418,-36.8197532 C73.3564249,-83.5070534 -25.4258151,-91.9863164 -45.0869451,-71.6603795 C-64.7480751,-51.3344425 -95.1337028,-22.0408451 -79.8240139,24.4609705 C-64.514325,70.9627862 -3.46161515,89.4571273 18.0937376,79.2268121 C39.6490904,68.9964969 64.9148327,52.3802189 68.0046783,20.7433959 C71.0945238,-10.893427 52.1572528,-43.0936393 27.1808776,-43.0936393 C2.20450232,-43.0936393 -5.78309464,-35.2053491 -9.97812023,-17.9879156 C-12.774804,-6.50962663 -10.2819056,2.41548347 -2.49942505,8.7874147 Z'); */
+    animation: rotate 10s ease infinite, liquid 3s linear infinite;
+    border-radius: 65% 75% 80% 70% / 45% 66% 70% 70%;
+  }
+
+  svg {
+    position: absolute;
+  }
+
+  .big-blob {
+    background: var(--yellow);
+    width: 75px;
+    height: 75px;
+    position: relative;
+    border-radius: 65% 75% 80% 70% / 45% 66% 70% 70%;
+    animation: liquid 3s linear infinite;
+    top: 15px;
+    left: 15px;
+  }
+
+  /* div.blobs:last-child {
+    width: 20px;
+    height: 20px;
+    offset-path: path('M-4.71123307,16.5352174 C8.50655454,22.956337 21.4181407,22.956337 34.0235253,16.5352174 C52.9316022,6.90353792 52.9316022,-25.1299665 16.5942619,-33.750159 C-19.7430785,-42.3703516 -43.5459736,-35.7768501 -59.3327172,8.23207018 C-75.1194608,52.2409904 -8.07627662,129.044474 65.2750568,103.027166 C138.62639,77.0098571 169.906763,18.5637584 153.938386,-69.1172687 C137.970008,-156.798296 -47.834681,-172.722766 -84.8163303,-134.549664 C-121.79798,-96.3765632 -178.951898,-41.3617583 -150.155103,45.9709198 C-121.358307,133.303598 -6.52106683,168.036873 34.0235253,148.823842 C74.5681174,129.610811 122.091776,98.4046301 127.903628,38.9891333 C133.71548,-20.4263634 98.0953753,-80.8999328 51.1160028,-80.8999328 C4.13663032,-80.8999328 -10.8876592,-66.085339 -18.7783026,-33.750159 C-24.0387315,-12.1933724 -19.3497083,4.56841969 -4.71123307,16.5352174 Z');
+  } */
+
+  @keyframes rotate {
+    to {
+      motion-offset: 100%;
+      offset-distance: 100%;
+    }
+  }
+
+  @keyframes liquid {
+    0%, 100% {
+      border-radius: 60% 70% 50% 60% / 65% 66% 60% 65%;
+      transform: rotate(0deg);
+    }
+
+    25% {
+      border-radius: 80% 70% 80% 60% / 60% 66% 60% 75%;
+      transform: rotate(90deg);
+    }
+
+    50% {
+      border-radius: 70% 60% 80% 60% / 60% 66% 75% 60%;
+      transform: rotate(180deg);
+    }
+
+    75 {
+      border-radius: 65% 75% 80% 70% / 45% 66% 70% 70%;
+      transform: rotate(270deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
