@@ -200,7 +200,7 @@ a:hover, a:focus {
   :root {
     --yellow: #964C27;
   }
-/* Blob animation Prathamesh Koshti https://codepen.io/prathameshkoshti/pen/WNbMVJM */ 
+/* Blob animation Prathamesh Koshti https://codepen.io/prathameshkoshti/pen/WNbMVJM */
   .container {
     filter: url('#gooey');
     display: flex;
