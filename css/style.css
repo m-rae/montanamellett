@@ -37,13 +37,18 @@ A1: #222222
    }
  }
 
+ @font-face {
+   font-family: 'AtzurProRegular';
+   src: url(fonts/AtzurProRegular.otf);
+ }
 
 html {
-  background: #304FFE;
-  color: #ffffff;
+  background: #B5D3D0; 5255B0
+  color: #333333;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Ruda', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 400;
   font-size: 6px;
   height: 100%;
@@ -64,9 +69,9 @@ body {
 a {
   text-decoration: none;
   font-style: italic;
-  color: #ffffff;
+  color: #5E6CB5;
   padding-bottom: 0.05rem;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #5E6CB5;
 
   -moz-transition: all 200ms ease;
   -o-transition: all 200ms ease;
@@ -81,10 +86,10 @@ a:hover, a:focus {
 
 .name {
   animation: fadeInDown .6s ease-in-out .3s forwards;
-  font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
-  font-size: 3rem;
+  font-family: 'Ruda', Helvetica, Arial, sans-serif;
+  font-size: 5rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #32546E;
   letter-spacing: 3px;
   margin-top: 17rem;
 }
@@ -92,7 +97,7 @@ a:hover, a:focus {
 .intro {
   animation: fadeInDown .6s ease-in-out .3s forwards;
   flex: 1;
-  font-family: 'Noto Serif', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 7rem;
   line-height: 10rem;
   margin-left: -.5rem;
