@@ -18,12 +18,11 @@ A700: ##015871
 
 /* Wave animation */
 .ocean {
-  height: 5%;
+  height: 0%;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #015871;
   z-index: -999999;
 }
 
