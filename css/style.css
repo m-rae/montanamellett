@@ -30,7 +30,7 @@ A700: ##015871
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
   position: absolute;
   top: -198px;
-  width: 6400px;
+  width: 3200px;
   height: 198px;
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
@@ -38,7 +38,7 @@ A700: ##015871
 
 .wave:nth-of-type(2) {
   top: -175px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  animation: wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
   opacity: 1;
 }
 
@@ -97,6 +97,7 @@ a {
   -o-transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
+  background-color: #F6F2E6;
 }
 
 a:hover, a:focus {
