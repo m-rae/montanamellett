@@ -1,8 +1,27 @@
 /* colours
-A100: #9B5C37
-A200: #F6F2E6
-A400: #333333
-A700: ##015871
+// sea blue
+$-sea blue-50: #E6EFF1;
+$-sea blue-100: #CCDEE3;
+$-sea blue-200: #99BCC6;
+$-sea blue-300: #679BAA;
+$-sea blue-400: #34798D;
+$-sea blue-500: #015871;
+$-sea blue-600: #014255;
+$-sea blue-700: #012C39;
+$-sea blue-800: #00161C;
+$-sea blue-900: #00090B;
+
+// peach
+$-peach-50: #FFF9F6;
+$-peach-100: #FDF2ED;
+$-peach-200: #FCE5DB;
+$-peach-300: #FAD9C8;
+$-peach-400: #F9CCB6;
+$-peach-500: #F7BFA4;
+$-peach-600: #B98F7B;
+$-peach-700: #7C6052;
+$-peach-800: #3E3029;
+$-peach-900: #191310;
 */
 @keyframes fadeInDown {
   0% {
@@ -64,8 +83,8 @@ A700: ##015871
 
 /* Ted Mcdonald https://codepen.io/tedmcdo/pen/PqxKXg for the wave animation */
 html {
-  background: #F6F2E6;
-  color: #333333;
+  background: #FFF9F6;
+  color: #00090B;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: 'Ruda', sans-serif;
@@ -90,19 +109,18 @@ body {
 a {
   text-decoration: none;
   font-style: italic;
-  color: #964C27;
+  color: #34798D;
   padding-bottom: 0.05rem;
-  border-bottom: 1px solid #964C27;
+  border-bottom: 1px solid #34798D;
   -moz-transition: all 200ms ease;
   -o-transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
-  background-color: #F6F2E6;
 }
 
 a:hover, a:focus {
-  color: ##015871;
-  border-bottom: 1px solid ##015871;
+  color: #015871;
+  border-bottom: 1px solid #015871;
 }
 
 .name {
@@ -110,7 +128,7 @@ a:hover, a:focus {
   font-family: 'Ruda', Helvetica, Arial, sans-serif;
   font-size: 5.5rem;
   font-weight: bold;
-  color: #9B5C37;
+  color: #34798D;
   letter-spacing: 3px;
   margin-top: 15rem;
 }
@@ -119,6 +137,7 @@ a:hover, a:focus {
   animation: fadeInDown .6s ease-in-out .3s forwards;
   font-family: 'Ruda', Helvetica, Arial, sans-serif;
   font-size: 7rem;
+  color: #7C6052;
   line-height: 10rem;
   margin-left: -.5rem;
   margin-top: 10rem;
@@ -152,13 +171,13 @@ a:hover, a:focus {
   }
 
   a {
-    color: #015871;
-    border-bottom: 1px solid #015871;
+    color: #34798D;
+    border-bottom: 1px solid #34798D;
   }
 
   a:hover, a:focus {
-    color: #964C27;
-    border-bottom: 1px solid #964C27;
+    color: #015871;
+    border-bottom: 1px solid #015871;
   }
 
   .name {
@@ -199,7 +218,7 @@ a:hover, a:focus {
   }
 
   :root {
-    --yellow: #964C27;
+    --peach: #F7BFA4;
   }
 /* Blob animation Prathamesh Koshti https://codepen.io/prathameshkoshti/pen/WNbMVJM */
   .container {
@@ -208,7 +227,7 @@ a:hover, a:focus {
   }
 
   div.blobs {
-    background: var(--yellow);
+    background: var(--peach);
     width: 50px;
     height: 50px;
     position: relative;
@@ -222,7 +241,7 @@ a:hover, a:focus {
   }
 
   .big-blob {
-    background: var(--yellow);
+    background: var(--peach);
     width: 75px;
     height: 75px;
     position: relative;
