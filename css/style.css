@@ -88,7 +88,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: 'Ruda', sans-serif;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 6px;
   height: 100%;
@@ -109,7 +109,8 @@ body {
 a {
   text-decoration: none;
   font-style: italic;
-  color: #34798D;
+  font-weight: 600;
+  color: #083A53;
   padding-bottom: 0.05rem;
   border-bottom: 1px solid #34798D;
   -moz-transition: all 200ms ease;
@@ -137,7 +138,7 @@ a:hover, a:focus {
   animation: fadeInDown .6s ease-in-out .3s forwards;
   font-family: 'Ruda', Helvetica, Arial, sans-serif;
   font-size: 7rem;
-  color: #7C6052;
+  color: #AB3A00;
   line-height: 10rem;
   margin-left: -.5rem;
   margin-top: 10rem;
@@ -146,7 +147,7 @@ a:hover, a:focus {
 
 .about {
   animation: fadeInDown .6s ease-in-out .3s forwards;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 3rem;
   font-weight: 400;
   line-height: 5rem;
@@ -218,7 +219,7 @@ a:hover, a:focus {
   }
 
   :root {
-    --peach: #F7BFA4;
+    --green: #8CB743;
   }
 /* Blob animation Prathamesh Koshti https://codepen.io/prathameshkoshti/pen/WNbMVJM */
   .container {
@@ -227,7 +228,7 @@ a:hover, a:focus {
   }
 
   div.blobs {
-    background: var(--peach);
+    background: var(--green);
     width: 50px;
     height: 50px;
     position: relative;
@@ -241,7 +242,7 @@ a:hover, a:focus {
   }
 
   .big-blob {
-    background: var(--peach);
+    background: var(--green);
     width: 75px;
     height: 75px;
     position: relative;
