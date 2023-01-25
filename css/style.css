@@ -23,7 +23,7 @@ $-peach-700: #7C6052;
 $-peach-800: #3E3029;
 $-peach-900: #191310;
 */
-@keyframes fadeInDown {
+/* @keyframes fadeInDown {
   0% {
     opacity: 0;
     transform: translateY(10%);
@@ -35,8 +35,8 @@ $-peach-900: #191310;
   }
 }
 
-/* Wave animation */
-.ocean {
+Wave animation */
+/* .ocean {
   height: 0%;
   width: 100%;
   position: absolute;
@@ -79,7 +79,7 @@ $-peach-900: #191310;
   50% {
     transform: translate3d(0, 5px, 0);
   }
-}
+} */
 
 /* Ted Mcdonald https://codepen.io/tedmcdo/pen/PqxKXg for the wave animation */
 html {
@@ -166,7 +166,7 @@ a:hover, a:focus {
   display: inline-block;
 }
 
-@media screen and (max-width: 50em) {
+/* @media screen and (max-width: 50em) { */
   body {
     padding: 0 3rem;
   }
@@ -219,7 +219,7 @@ a:hover, a:focus {
   }
 
   :root {
-    --green: #8CB743;
+    --blue: #9ABFCA;
   }
 /* Blob animation Prathamesh Koshti https://codepen.io/prathameshkoshti/pen/WNbMVJM */
   .container {
@@ -228,12 +228,12 @@ a:hover, a:focus {
   }
 
   div.blobs {
-    background: var(--green);
-    width: 50px;
-    height: 50px;
+    background: var(--blue);
+    width: 75px;
+    height: 70px;
     position: relative;
     /* offset-path: path('M-2.49942505,8.7874147 C4.52775317,12.2064524 11.3921407,12.2064524 18.0937376,8.7874147 C28.146133,3.65885811 28.146133,-13.3979429 8.82754694,-17.9879156 C-10.4910391,-22.5778882 -23.1457428,-19.0670628 -31.5386951,4.36625841 C-39.9316474,27.7995796 -4.28843555,68.6949409 34.7084759,54.8415689 C73.7053873,40.9881969 90.3354587,9.86754694 81.8459418,-36.8197532 C73.3564249,-83.5070534 -25.4258151,-91.9863164 -45.0869451,-71.6603795 C-64.7480751,-51.3344425 -95.1337028,-22.0408451 -79.8240139,24.4609705 C-64.514325,70.9627862 -3.46161515,89.4571273 18.0937376,79.2268121 C39.6490904,68.9964969 64.9148327,52.3802189 68.0046783,20.7433959 C71.0945238,-10.893427 52.1572528,-43.0936393 27.1808776,-43.0936393 C2.20450232,-43.0936393 -5.78309464,-35.2053491 -9.97812023,-17.9879156 C-12.774804,-6.50962663 -10.2819056,2.41548347 -2.49942505,8.7874147 Z'); */
-    animation: rotate 10s ease infinite, liquid 3s linear infinite;
+    animation: rotate 15s ease infinite, liquid 3s linear infinite;
     border-radius: 65% 75% 80% 70% / 45% 66% 70% 70%;
   }
 
@@ -242,9 +242,9 @@ a:hover, a:focus {
   }
 
   .big-blob {
-    background: var(--green);
-    width: 75px;
-    height: 75px;
+    background: var(--blue);
+    width: 100px;
+    height: 100px;
     position: relative;
     border-radius: 65% 75% 80% 70% / 45% 66% 70% 70%;
     animation: liquid 3s linear infinite;
@@ -290,4 +290,3 @@ a:hover, a:focus {
       transform: rotate(360deg);
     }
   }
-}
