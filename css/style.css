@@ -108,11 +108,11 @@ body {
 
 a {
   text-decoration: none;
-  font-style: italic;
+  font-style: normal;
   font-weight: 600;
   color: #083A53;
   padding-bottom: 0.05rem;
-  border-bottom: 1px solid #34798D;
+/*  border-bottom: 1px solid #34798D; */
   -moz-transition: all 200ms ease;
   -o-transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
@@ -121,7 +121,7 @@ a {
 
 a:hover, a:focus {
   color: #015871;
-  border-bottom: 1px solid #015871;
+/*  border-bottom: 1px solid #015871; */
 }
 
 .name {
@@ -173,12 +173,12 @@ a:hover, a:focus {
 
   a {
     color: #34798D;
-    border-bottom: 1px solid #34798D;
+  /*  border-bottom: 1px solid #34798D;*/
   }
 
   a:hover, a:focus {
     color: #015871;
-    border-bottom: 1px solid #015871;
+    /* border-bottom: 1px solid #015871; */
   }
 
   .name {
