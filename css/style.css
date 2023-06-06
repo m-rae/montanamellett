@@ -83,7 +83,7 @@ Wave animation */
 
 /* Ted Mcdonald https://codepen.io/tedmcdo/pen/PqxKXg for the wave animation */
 html {
-  background: #FCFCFB;
+  background: #F0FAF1;
   color: #00090B;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -110,7 +110,7 @@ a {
   text-decoration: none;
   font-style: normal;
   font-weight: 600;
-  color: #083A53;
+  color: #CD3E14;
   padding-bottom: 0.05rem;
 /*  border-bottom: 1px solid #34798D; */
   -moz-transition: all 200ms ease;
@@ -120,16 +120,16 @@ a {
 }
 
 a:hover, a:focus {
-  color: #015871;
+  color: #FF683A;
 /*  border-bottom: 1px solid #015871; */
 }
 
 .name {
   animation: fadeInDown .6s ease-in-out .3s forwards;
   font-family: 'Ruda', Helvetica, Arial, sans-serif;
-  font-size: 5.5rem;
+  font-size: 6.5rem;
   font-weight: bold;
-  color: #34798D;
+  color: #CD3E14;
   letter-spacing: 3px;
   margin-top: 15rem;
 }
@@ -138,7 +138,7 @@ a:hover, a:focus {
   animation: fadeInDown .6s ease-in-out .3s forwards;
   font-family: 'Ruda', Helvetica, Arial, sans-serif;
   font-size: 7rem;
-  color: #AB3A00;
+  color: #4679FC;
   line-height: 10rem;
   margin-left: -.5rem;
   margin-top: 10rem;
@@ -172,12 +172,12 @@ a:hover, a:focus {
   }
 
   a {
-    color: #34798D;
+    color: #CD3E14;
   /*  border-bottom: 1px solid #34798D;*/
   }
 
   a:hover, a:focus {
-    color: #015871;
+    color: #FD8460;
     /* border-bottom: 1px solid #015871; */
   }
 
@@ -219,7 +219,7 @@ a:hover, a:focus {
   }
 
   :root {
-    --blue: #9ABFCA;
+    --blue: #DAFD60;
   }
 /* Blob animation Prathamesh Koshti https://codepen.io/prathameshkoshti/pen/WNbMVJM */
   .container {
